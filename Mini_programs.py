@@ -146,5 +146,6 @@ while spisok == 2 or spisok == 1:
             print("    ")
 
     while p == 3:
-        calculator.calculator1()
+        spisok = calculator.calculator1()
+        p = 0
 os.system("pause")
