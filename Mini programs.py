@@ -1,7 +1,9 @@
 import os
-import Text
 import random
+
+import Text
 import calculator
+
 k = 0
 l = 5
 вопрос = 2
@@ -144,5 +146,5 @@ while spisok == 2 or spisok == 1:
             print("    ")
 
     while p == 3:
-         calculator.calculator1()
+        calculator.calculator1()
 os.system("pause")
