@@ -1,12 +1,14 @@
 import random
 
 import Text
+from code_generator.ui import run
 from common.input import проверка_ввода
 
 
 def generator():
     spisok = 2
     while True:
+        run()
         print("Какой длины генерировать пароль?")
         print("    ")
         print("Мин. длина 5, Макс. длина. 9.")
@@ -63,3 +65,9 @@ def generator():
             print(Text.прощание)
             print("    ")
             return spisok
+
+
+
+
+def save(password):
+    pass
