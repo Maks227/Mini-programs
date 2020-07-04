@@ -2,27 +2,14 @@ import os
 import random
 
 import Text
-import calculator
-import graphic_code_generator
+from calculator import calculator
+from code_generator import graphic_code_generator
+from common.input import проверка_ввода
 
 k = 0
 l = 5
 вопрос = 2
 spisok = 2
-
-
-def проверка_ввода(min, max, сообщение):
-    while True:
-        vodd = input(сообщение)
-        try:
-            vodd = int(vodd)
-            if vodd > max or vodd < min:
-                print("нет такой значения")
-            else:
-                return vodd
-        except:
-            print("нужно конктретно число")
-
 
 print("Приветствую! Моё имя Максимилиан Савицкий и я создатель этих программ прошу выбрать программу.")
 print("выбор производится написагием нужной цыфры.")
